@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>常定　ピンセット課題課題</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>第２回（道用先生、サプライズ動画をお楽しみください）</h1>  
+
+ <div>
+ <h3>Assignment1</h3><br>
+ <h2>作品名：道用先生の輪郭ピンセット</h2> 
+見たとき誰かがくすっと笑ってくれるような物を作りたかった。<br>
+機能的なピンセットも考えたが、今回は自分の直感に従って作ってみた。<br>
+調べたこと：fusion360上に画像を浮かび上がらせる方法
+<br>
+<h2>構想段階のスケッチ・制作のようす</h2><br>
+<img src="images/IMG_3304.JPG" width="40%"><br><br>
+<img src="images/IMG_3301.JPG" width="40%"><br>
+<img src="images/IMG_3302.JPG" width="40%"><br>
+<h2>stlファイル</h2>
+<li><a href="files/pinset .stl">ここをクリック</a></li><br>
+<h2>サプライズ動画</h2>
+<li><a href="https://youtube.com/shorts/NOcX9sGmhUg?feature=share" target="blank">動画はこちら</a></li><br>
+※写真は本人の許可済み
+ </div>   
+
+</body>
+</html>
