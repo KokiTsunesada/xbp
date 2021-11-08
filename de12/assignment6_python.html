@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>常定　第６回</title> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>第６回</h1> 
+   <div>
+       <h2>Pythonで何ができるのか検証する</h2>
+       <h3>＜Tkinterを使ったレトロゲーム＞</h3><br>
+      Tkinterを使って、蛇のレトロゲームの制作を試みた。<br>
+            結論から言うと、完成できなかった。<br>
+       私は今できそうなことより、自分のやりたいことを優先する方が好きなので、難しそうでもゲームを作成することを選んだ。<br>
+       　<h3>何でつまずいたか</h3>
+       Tkinterを　Windows＝Tk（）で結びつけたものの、記載した関数のとおりのTkinterが表示されず、mainloopを追加するなどの<br>
+       修正などを行ったが先へ進めなかった。（Tkinter自体は表示された）<br>
+       <h3>実際に製作したコード</h3><br>
+       <code>
+        <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+        <li style="background-color:#EFF;">from tkinter import * #tkinterとｈ最初からPythonに含まれているもの</li>
+        <li style="background-color:#EEF;">import random</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">#関数は大文字で表示（ゲームのすべての定数を表す）</li>
+        <li style="background-color:#EFF;">GAME_WIDTH = 700</li>
+        <li style="background-color:#EEF;">GAME_HEIGHT = 700</li>
+        <li style="background-color:#EFF;">SPEED = 50</li>
+        <li style="background-color:#EEF;">SPACE_SIZE = 50</li>
+        <li style="background-color:#EFF;">BODY_PARTS = 3</li>
+        <li style="background-color:#EEF;">SNAKE_COLOR = "#00FF00"#緑の色番号</li>
+        <li style="background-color:#EFF;">FOOD_COLOR = "#FF0000"#赤の番号</li>
+        <li style="background-color:#EEF;">BACKGROUND_COLOR = "#000000" #黒の番号</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">class Snake:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;pass</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">class Food:</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;pass</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">def next_turn():</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;pass</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">def change_direction(new_direction):</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;pass</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">def check_collisions():</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;pass</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">def game_over():</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;pass</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">window = Tk()</li>
+        <li style="background-color:#EEF;">window.title("Snake game")</li>
+        <li style="background-color:#EFF;">window.resizeable(False, False)#大きさを変えたくない意味</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">score = 0</li>
+        <li style="background-color:#EEF;">direction = 'down'#パイソンに'と"の違いはない</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">label = Label(window, text="Score:{}".format(score), font=('consolas', 40))</li>
+        <li style="background-color:#EFF;">label.pack()</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">canvas = Canvas(window, bg=BACKGROUND_COLOR, height=GAME_HEIGHT, width=GAME_WIDTH)</li>
+        <li style="background-color:#EEF;">canvas.pack()#packとは、その枠組みの中に入れるということ。</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">window.mainloop()#永遠と表示するという意味</li>
+        </ol></code>
+
+<h3>参考にしたサイト</h3>
+<ul>
+    <li><a href="https://youtu.be/bfRwxS5d0SI" target="_blank">元のコードを説明した動画</a></li>
+    <li><a href="https://www.sejuku.net/blog/71311" target="_blank">【Python入門】import ができない！を最速で解決する3ステップ</a></li>
+    <li><a href="https://qiita.com/8msyk8/items/a57f21b50f456b07a02e" target="_blank">Tkinterでwindowが表示されない</a></li>
+    
+</ul>
+<br>
+感想：元のコードを紹介しているサイトが海外のサイトだったため、難しく感じたが、本気でできると思ってました！！<br>
+　　　自分の想像を形にすることは間に合わなかったけれど、今回の課題に取り組んだことで、プログラミングに対する苦手意識も減り、<br>
+     熱も一層高まったと感じている。<br>
+     これからは自分の想像を形にできるという自信を積み重ねたい。
+   </div>
+</body>
+
+
+</html>
