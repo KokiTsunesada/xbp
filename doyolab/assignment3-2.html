@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="top">
+    <h1>ミッション１：コンタクトフォームを作ろう</h1>
+    <br>
+  </div>
+  <div class="contact-form">
+    <p class="title">Contact</p>
+
+    <form action="https://api.staticforms.xyz/submit"method="post">
+      <input type="hidden" name="accessKey" value="c477cc6d-1f85-43d2-adc2-ce908d50ea36">
+
+      <div class="item">
+        <label class="label">お名前</label>
+        <input type="text" class="input" name="name" required>
+      </div>
+
+      <div class="item">
+        <label class="label">メールアドレス</label>
+        <input type="email" class="input" name="email" required>
+      </div>
+
+      <div class="item">
+        <label class="label">電話番号</label>
+        <input type="tel" class="input" name="tel" required>
+      </div>
+
+      <div class="item">
+        <label class="label">お問い合わせ内容</label>
+        <textarea class="input" name="message" placeholder="ご質問はこちら" required></textarea>
+      </div>
+
+      <div class="button-area">
+        <input type="submit" value="送信">
+        <input type="reset" value="リセット">
+      </div>
+    </form>
+    
+    
+  </div> <br>
+  <div class="bottom">
+    <h2>▪コード</h2>
+    <h3>HTML</h3>
+    <img src="images/contactform-html.png" width="400px"><br>
+    <br>
+    <h3>CSS</h3>
+    <img src="images/contactform-css-1.png" width="180px">
+    <img src="images/contactform-css-2.png" width="185px">
+    <img src="images/contactform-html-3.png" width="200px">
+   
+    <h2>▪コード内容</h2>
+    今回のコンタクトフォームで必要な部品は「名前」「メールアドレス」「お問い合わせ内容」「送信ボタン」の４つです。<br>
+    <p class="code-top">〈主なコード〉</p><br>
+    <p class="code">・formタグ</p>:フォームとは入力欄やっ送信ボタンの集まりのことを指す。コンタクトフォームを作る際、初めに必要になります。<br>
+    <p class="code">・input type="text" </p>:インプットタグのタイプ属性の中にtextを入れると、１行のテキスト入力欄を生成できる。名前とメールアドレスはこれ。また、typeの中をemailやtelにすると、正しい書式かを自動判断してくれる。<br>
+    <p class="code">・input type="submit" value="~"</p>:submitを入れると送信ボタンを生成できる。submitをresetに変えると入力内容を白紙に戻せる機能になる。また、valueで送信ボタンの中の文字を自由に変えられえる。<br>
+    <p class="code">・textarea</p>:複数行のテキストを生成することができる。placeholderを追加することで、入力すると消える文字を表示することができる（質問はこちら）。お問い合わせ内容はこれ。<br>
+    <p class="code">・required</p>:インプットタグの中に入れることで、送信ボタンを押した際、未記入に警告が出るようにできる。<br>
+    <p class="code">・box shadow:px px px color; </p>影をつけることができる。１つ目が左右、２つ目が上下、３つ目が影のぼかしです。それぞれ値をマイナスにすると左、上に影が出る。<br>
+    <br>
+    <h2>▪内容を受け取る方法</h2>
+    本来、コンタクトフォームはPHP言語などを使って受信者側のサーバサイドを構築するのが一般的です。<br>
+    今回は外部のシステム<a href="https://www.staticforms.xyz/">STATIC FORMS</a>を取り入れることで、HTMLとCSSだけでコンタクトフォームを作れたので、その方法を選びました。<br>
+    <br>
+    <p class="jyushin">①アクセスキーを作成する</p><br>
+    記入内容を受け取りたいメールアドレスを入力します。
+    <img src="images/contactform-outsorcing1.jpg.png" width="700px">
+    <br><br>
+    <p class="jyushin">②アクセスキーをコードに打ち込む</p><br>
+    赤線をコピーして、valueをメールで送られてきた自分のアクセスキーに変えます。記入場所はformのなかであればどこでも可。<br>
+    <img src="images/contactform-outsorcing2.png" width="700px"><br>
+    <img src="images/contactform-submit1.jpg" width="400px" height="700px">
+    <br><br>
+    <p class="jyushin">③inputのnameを規定通りのものに変える</p><br>
+    STATIC FORMSを利用する際、input内のnameを画像に書かれている通りにしておく必要がある。これを行っていない要素（例えばお問い合わせ内容）は受信した時反映されない。<br>
+    <img src="images/contactform-outsorcing3.png" width="700px"><br>
+    <img src="images/contactform-submit3.jpg" width="400px" height="700px">
+    <br><br>
+    以上でコンタクトフォームが完成します。<br>
+    参考動画：<a href="https://youtu.be/7LjThrh8hRM">HTMLだけ　コンタクトフォームの作り方</a><br>
+    <br><br>
+    <h3>▪コンタクトフォームを終えて</h3><br>
+    コンタクトフォームを作るにあたって気づいたことは３つです。<br><br>
+    <p class="state">１．プログラミングには雛形がある</p>
+    ホームページに乗っている華やかなデザインや素敵なUIは初心者が実現してもほぼ不可能です。プログラミングは直感だけではできないので、正確性が求められる分ステップアップが明確だなと感じました。ホームページで目にするデザインにも共通して最もシンプルな型が存在し、それに動きや装飾を足していくイメージです。リアルなら、レーザーカッターでカットするのが雛形で、それを染めたり熱で曲げて装飾する工程と近いです。<br><br>
+    <p class="state">２．コードの基礎とは言語のルールである</p>
+    今回、初めてCSSを使ったが、pixの順番で上下左右が決まることや、class指定されたコードには「.」をつけないと反映されないなど、CSSにおけるルールは動画上で説明されていないので知らないと何時間もかかります。４～５月中にprogateでCSSの基礎を学んでいたのは間違いではなかったなと感じた。よく、プログラミングで〇〇の基礎という本を目にするが、ネットにはコードは暗記する必要はない。と書いてあります。じゃあどうやって勉強すればいいんだと思いつつ、結局progateでコードを暗記しながら時間をかけて取り組んでいました。実際にコードを書いて、本質は言語のルールを理解することだと気づきました。ルールを理解していればコードの名前は変われど、配置はほぼ同じなので応用して理解可能です。今後新言語を学ぶ際は、ルールに注目して取り組む。<br><br>
+    <p class="state">３．早く試した方が良い</p>
+    test earlyっていうけど、自分の納得した答えを見つけないと継続できない癖がある自分にとって、その決断は自分のモチベーションを失う原因になりそうだし、結構難しいことだと思います。でも、今回はちょっと基礎暗記しちゃった後にとりあえず実践してみればなんとなくルールが重要だって理解できたと思う。重要なのは、その実践が学んでいることを使えるものか・レベルかです。だからこそレベルの高いものにはじめから手を付けるべきじゃないと思った。なんか受験の失敗と似てるし、test earlyで最もエネルギーを注がなければならないのは自分の固定概念を捨てることだなと感じた。<br><br>
+    <br>
+    次回はスライドショーを作成します。Java Scriptが必要になってくるので、作る前にいったんprogateで言語のルールを身に付けようと思います。<br>
+    
+
+  </div>
+</body>
+
+</html>

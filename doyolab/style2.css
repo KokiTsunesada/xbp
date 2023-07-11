@@ -1,5 +1,3 @@
-
-
 * {
     margin:0;
     padding:0;
@@ -8,9 +6,10 @@
 
 body {
     height: 100vh;
-    display: flex;
+    width: 600px;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .contact-form {
@@ -49,7 +48,8 @@ form {
 }
 
 input[type="text"],
-input[type="email"]{
+input[type="email"],
+input[type="tel"]{
     border: solid 1px #aaa;
     padding: 10px;
     font-size: 15px;
@@ -97,3 +97,21 @@ textarea {
 
 }
 
+.code-top {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.code {
+    color:#1e90ff;
+}
+
+.jyushin {
+    color:white;
+    font-weight: bold;
+    background-color:black;
+}
+
+.state {
+    font-weight: bold;
+}
